@@ -168,6 +168,7 @@ Nineteen ligand-receptor pairs were analyzed across five functional categories:
   - Non-Responder (Sample011): Pre 708 spots → Post 250 spots
   - Progressor (Sample012): Pre 109 spots → Post 368 spots
   - Super Responder (Sample027): Pre 430 spots → Post 350 spots
+- **Pre/Post Spatial Cluster Plots**: Tissue spatial organization of clusters for paired samples, visualizing the spatial distribution of cell clusters on tissue sections before and after treatment
 
 ---
 
