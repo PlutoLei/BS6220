@@ -164,6 +164,10 @@ Nineteen ligand-receptor pairs were analyzed across five functional categories:
 - Spatial cluster mapping for representative samples
 - Methodological validation plots
 - Treatment-induced change visualization
+- **Pre/Post Treatment UMAP DimPlots**: Paired samples from each response category showing cellular clustering changes before and after treatment
+  - Non-Responder (Sample011): Pre 708 spots → Post 250 spots
+  - Progressor (Sample012): Pre 109 spots → Post 368 spots
+  - Super Responder (Sample027): Pre 430 spots → Post 350 spots
 
 ---
 
@@ -176,12 +180,5 @@ Nineteen ligand-receptor pairs were analyzed across five functional categories:
 **Spatial Resolution**: The Visium spot diameter (~55μm) encompasses multiple cells, thereby precluding definitive single-cell interaction mapping. The results presented reflect regional co-expression patterns rather than direct cellular contacts.
 
 **Validation Requirements**: The findings reported are derived exclusively from transcriptomic data. Orthogonal validation via immunohistochemistry or flow cytometry is requisite to confirm protein-level expression and cellular abundances.
-
-### Proposed Future Studies
-
-1. Integration of single-cell RNA sequencing for enhanced cell type resolution
-2. Application of spatial domain detection algorithms (BayesSpace, BANKSY)
-3. Protein-level validation through multiplexed immunostaining
-4. Expansion to larger, multicenter cohorts for biomarker validation
 
 ---
