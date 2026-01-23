@@ -1,0 +1,60 @@
+{
+  "metadata": {
+    "title": "BGformer Forward Propagation",
+    "total_slides": 7,
+    "resolution": "2K",
+    "style": "styles/gradient-glass.md",
+    "generated_at": "2026-01-23T14:37:33.160793"
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "page_type": "cover",
+      "content": "Forward Propagation\n(Mathematical Expression)\n\n基于BGformer的血糖预测模型\n\nBS6220: Spatial and Multi-omics Data Analytics",
+      "prompt": "风格ID\ngradient-glass\n\nPlease generate a cover page based on visual balance aesthetics.\nPlace a large complex 3D glass object in the center, overlaid with bold text:\n\nForward Propagation\n(Mathematical Expression)\n\n基于BGformer的血糖预测模型\n\nBS6220: Spatial and Multi-omics Data Analytics\n\nBackground with extended aurora waves.",
+      "image_path": "outputs/20260123_143733\\images\\slide-01.png"
+    },
+    {
+      "slide_number": 2,
+      "page_type": "content",
+      "content": "背景与动机\n\n问题：\n• 糖尿病影响全球数百万人\n• 血糖异常导致严重并发症\n• 现有方法难以捕捉血糖波动性\n\n解决方案：BGformer模型\n• 提前60-90分钟预警\n• 辅助胰岛素和饮食决策",
+      "prompt": "风格ID\ngradient-glass\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\n背景与动机\n\n问题：\n• 糖尿病影响全球数百万人\n• 血糖异常导致严重并发症\n• 现有方法难以捕捉血糖波动性\n\n解决方案：BGformer模型\n• 提前60-90分钟预警\n• 辅助胰岛素和饮食决策",
+      "image_path": "outputs/20260123_143733\\images\\slide-02.png"
+    },
+    {
+      "slide_number": 3,
+      "page_type": "content",
+      "content": "Forward Propagation 流程\n\n输入 → FEM模块 → Encoder → Decoder → 输出\n血糖时序 → 特征提取 → 注意力计算 → 生成预测 → 未来血糖\n\n核心：Feature Enhancement Module (FEM)\n• 周期性特征提取 (时间归一化)\n• 趋势特征提取 (指数加权平均)",
+      "prompt": "风格ID\ngradient-glass\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nForward Propagation 流程\n\n输入 → FEM模块 → Encoder → Decoder → 输出\n血糖时序 → 特征提取 → 注意力计算 → 生成预测 → 未来血糖\n\n核心：Feature Enhancement Module (FEM)\n• 周期性特征提取 (时间归一化)\n• 趋势特征提取 (指数加权平均)",
+      "image_path": "outputs/20260123_143733\\images\\slide-03.png"
+    },
+    {
+      "slide_number": 4,
+      "page_type": "data",
+      "content": "数值例子：特征提取\n\n周期特征 (Eq. 5-7):\nhour_of_day = hour(x) / 23 - 0.5\n\n示例：08:15:30 → -0.152\n\n趋势特征 (Eq. 11):\ntrend(i) = (1-α) × Σ αᵗ × x_{i-t}\n\n示例：x=[120,125,130], α=0.3\ntrend = 124.81 mg/dL",
+      "prompt": "风格ID\ngradient-glass\n\nPlease generate a data/summary page using split-screen design.\nLeft side: typeset the following text.\nRight side: floating large glowing 3D data visualization:\n\n数值例子：特征提取\n\n周期特征 (Eq. 5-7):\nhour_of_day = hour(x) / 23 - 0.5\n\n示例：08:15:30 → -0.152\n\n趋势特征 (Eq. 11):\ntrend(i) = (1-α) × Σ αᵗ × x_{i-t}\n\n示例：x=[120,125,130], α=0.3\ntrend = 124.81 mg/dL",
+      "image_path": "outputs/20260123_143733\\images\\slide-04.png"
+    },
+    {
+      "slide_number": 5,
+      "page_type": "content",
+      "content": "BGformer 创新架构\n\n创新1: FEM (Feature Enhancement Module)\n周期+趋势+季节分解\n\n创新2: MOC (Microscale Overlapping Concerns)\n窗口化局部注意力，降低复杂度 O(L²)→O(W×L)\n\n创新3: DAM (Dual Attention Module)\n全局+局部注意力融合",
+      "prompt": "风格ID\ngradient-glass\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nBGformer 创新架构\n\n创新1: FEM (Feature Enhancement Module)\n周期+趋势+季节分解\n\n创新2: MOC (Microscale Overlapping Concerns)\n窗口化局部注意力，降低复杂度 O(L²)→O(W×L)\n\n创新3: DAM (Dual Attention Module)\n全局+局部注意力融合",
+      "image_path": "outputs/20260123_143733\\images\\slide-05.png"
+    },
+    {
+      "slide_number": 6,
+      "page_type": "data",
+      "content": "实验结果 (60分钟预测)\n\n模型性能对比 (MAE↓ / RMSE↓):\n• ARIMA: 56.03 / 69.88\n• LSTM: 28.44 / 35.70\n• Transformer: 29.33 / 38.15\n• Informer: 28.47 / 37.06\n• BGformer: 23.46 / 31.35 ✓\n\n性能提升: ~14% vs Informer",
+      "prompt": "风格ID\ngradient-glass\n\nPlease generate a data/summary page using split-screen design.\nLeft side: typeset the following text.\nRight side: floating large glowing 3D data visualization:\n\n实验结果 (60分钟预测)\n\n模型性能对比 (MAE↓ / RMSE↓):\n• ARIMA: 56.03 / 69.88\n• LSTM: 28.44 / 35.70\n• Transformer: 29.33 / 38.15\n• Informer: 28.47 / 37.06\n• BGformer: 23.46 / 31.35 ✓\n\n性能提升: ~14% vs Informer",
+      "image_path": "outputs/20260123_143733\\images\\slide-06.png"
+    },
+    {
+      "slide_number": 7,
+      "page_type": "content",
+      "content": "总结\n\n算法目的：通过数学变换实现前向传播\n\n核心创新：\n• FEM: 周期+趋势特征增强\n• MOC: 窗口化局部注意力\n• DAM: 双重注意力融合\n\n实际应用：糖尿病患者血糖预测\n提前60-90分钟预警",
+      "prompt": "风格ID\ngradient-glass\n\nPlease generate a data/summary page using split-screen design.\nLeft side: typeset the following text.\nRight side: floating large glowing 3D data visualization:\n\n总结\n\n算法目的：通过数学变换实现前向传播\n\n核心创新：\n• FEM: 周期+趋势特征增强\n• MOC: 窗口化局部注意力\n• DAM: 双重注意力融合\n\n实际应用：糖尿病患者血糖预测\n提前60-90分钟预警",
+      "image_path": "outputs/20260123_143733\\images\\slide-07.png"
+    }
+  ]
+}
